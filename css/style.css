@@ -634,12 +634,16 @@ header .wrap ul li a img
     line-height: 20px;
     padding-bottom: 10px;
 }
-#footer .topwrap .wrap .cont .box:nth-child(3) .txt p:nth-child(1), .box:nth-child(3) .txt p:nth-child(4)
+#footer .topwrap .wrap .cont .box:nth-child(3) .txt p:nth-child(1)
 {
     color: #f295b2;
     font-weight: bold;
 }
-
+#footer .topwrap .wrap .cont .box:nth-child(3) .txt p:nth-child(4)
+{
+    color: #f295b2;
+    font-weight: bold;
+}
 
 
 #footer .bottomwrap
