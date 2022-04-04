@@ -8,6 +8,29 @@
 
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".productsmenu").click(function(){
+                $("html, body").animate({scrollTop:$("#products").offset().top - 60}, 1000);
+                return false;
+            }); 
+            $(".servicesmenu").click(function(){
+                $("html, body").animate({scrollTop:$("#services").offset().top - 60}, 1000);
+                return false;
+            }); 
+
+            $(".chefsmenu").click(function(){
+                $("html, body").animate({scrollTop:$("#chefs").offset().top - 60}, 1000);
+                return false;
+            }); 
+            $(".mapmenu").click(function(){
+                $("html, body").animate({scrollTop:$("#map").offset().top - 60}, 1000);
+                return false;
+            }); 
+        });
+    </script>
 </head>
 <body>
 
@@ -54,11 +77,11 @@
     <header>
         <div class="wrap">
             <ul>
-                <li><a href="">Cakes</a></li>
-                <li><a href="">Service</a></li>
-                <li><a href=""><img src="./img/logo.png" alt="케익하우스 로고"></a></li>
-                <li><a href="">Chefs</a></li>
-                <li><a href="">Contact</a></li>
+                <li class="productsmenu"><a href="">Cakes</a></li>
+                <li class="servicesmenu"><a href="">Service</a></li>
+                <li class="logomenu"><a href=""><img src="./img/logo.png" alt="케익하우스 로고"></a></li>
+                <li class="chefsmenu"><a href="">Chefs</a></li>
+                <li class="mapmenu"><a href="">Contact</a></li>
             </ul>
         </div>
     </header>
@@ -75,6 +98,8 @@
             </div>
         </div>
     </section>
+
+
 
     <div id="products">
          <div class="wrap">
@@ -305,30 +330,30 @@
                 <div class="cont">
                     <div class="box">
                         <h3>Quick links</h3>
-                        <div class="txt">
-                            <p>Your Account</p>
-                            <p>View Order</p>
-                            <p>Privacy Policy</p>
-                            <p>Terms & conditionis</p>
-                        </div>                     
+                        <ul class="txt">
+                            <li><a href="#">Your Account</a></li>
+                            <li><a href="#">View Order</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms & conditionis</a></li>
+                        </ul>                     
                     </div>
                     <div class="box">
                         <h3>Work Times</h3>
-                        <div class="txt">
-                            <p>Mon. : Thu.: 8 am - 8 pm</p>
-                            <p>Fri. : 8 am - 8 pm</p>
-                            <p>Sat. : 9am - 4pm</p>
-                            <p>Sun. : Closed</p>
-                        </div>
+                        <ul class="txt">
+                            <li><a href="#">Mon. : Thu.: 8 am - 8 pm</a></li>
+                            <li><a href="#">Fri. : 8 am - 8 pm</a></li>
+                            <li><a href="#">Sat. : 9am - 4pm</a></li>
+                            <li><a href="#">Sun. : Closed</a></li>
+                        </ul>
                     </div>
                     <div class="box">
                         <h3>Contact Info</h3>
-                        <div class="txt">
-                            <p class="bold">(1800) 574 9687</p>
-                            <p>Cakecious Store</p>
-                            <p>256, baker Street, New York, 5245</p>
-                            <p class="bold">cakeciousdemo@email.com</p>
-                        </div>
+                        <ul class="txt">
+                            <li><a class="bold" href="#">(1800) 574 9687</a></li>
+                            <li><a href="#">Cakecious Store</a></li>
+                            <li><a href="#">256, baker Street, New York, 5245</a></li>
+                            <li><a class="bold" href="#">cakeciousdemo@email.com</a></li>
+                        </ul>
                     </div>                
                  </div>
             </div>
